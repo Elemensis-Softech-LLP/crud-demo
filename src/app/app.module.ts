@@ -9,11 +9,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { UserData } from './user-data.service';
+import { GetUserComponent } from './get-user/get-user.component';
+import { DeleteUserComponent } from './delete-user/delete-user.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    GetUserComponent,
+    DeleteUserComponent,
+    CreateUserComponent,
     
   ],
   imports: [
@@ -22,6 +29,7 @@ import { UserData } from './user-data.service';
     HttpClientModule,
     InMemoryWebApiModule,
     RouterModule,
+    DataTablesModule,
     AppRoutingModule, InMemoryWebApiModule.forRoot(UserData), HttpClientModule, FormsModule, ReactiveFormsModule
   ],
   providers: [],

@@ -1,14 +1,4 @@
-.welcome{
-    text-align: center;
-    background-image: linear-gradient(to right, #353670 0%, #7da7bb 51%, #08599c 100%);
-}
-.btn-1 {
-    background-image: linear-gradient(to right, #020a18 0%, #367896 51%, #1861d8 100%);
-  }
-  .btn-2 {
-    background-image: linear-gradient(to right, #a36c83 0%, #6c828d 51%, #64676d 100%);
-  }
-  .btn-3 {
+.btn-3 {
     background-image: linear-gradient(to right, #b40808 0%, #cf5473 51%, #a15c5c 100%);
   }
   .btn {

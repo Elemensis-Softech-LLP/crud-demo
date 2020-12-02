@@ -12,7 +12,7 @@ export class UserData implements InMemoryDbService {
       { id: 3, name: 'Table', model: 'N8', price: '2222222222'  },
       { id: 4, name: 'Chair', model: 'M9', price : '6666666666' },
       { id: 5, name: 'Bed', model: 'PZ', price: '9909999999'  },
-      { id: 5, name: 'Fan', model: 'NZ', price: '9909999999'  }
+      { id: 6, name: 'Fan', model: 'NZ', price: '9909999999'  }
 
     ];
     const user: UserFetch[]=[

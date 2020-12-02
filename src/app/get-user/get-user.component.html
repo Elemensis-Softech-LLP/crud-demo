@@ -1,0 +1,27 @@
+<div style="text-align: center;"><h4>List of Users</h4></div>
+<table class ="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Model</th>
+          <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let u of users">
+      <td scope="row">
+        {{u.id}}
+      </td>
+      <td scope="row">
+        {{u.name}}
+      </td>
+      <td scope="row">
+        {{u.model}}
+      </td>
+      <td scope="row">
+        {{u.price}}
+      </td>
+    </tr>
+</tbody>
+  </table>
