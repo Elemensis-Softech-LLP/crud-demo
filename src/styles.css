@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.full-row{
+    width: 100%;
+}
+.adjust-row-margin{
+    margin-left: 0em;
+    margin-right: 0em;
+ }
+ .welcome{
+    text-align: center;
+    background-image: linear-gradient(to right, #353670 0%, #7da7bb 51%, #08599c 100%);
+    padding-right: 10%;
+}

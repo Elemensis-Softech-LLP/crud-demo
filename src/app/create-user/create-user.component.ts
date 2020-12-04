@@ -6,7 +6,7 @@ import { AppserviceService } from '../userService/appservice.service';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Router } from '@angular/router';
 import { UserFetch } from '../user-fetch';
-// declare var $: any;
+declare var $: any;
 
 @Component({
   selector: 'app-create-user',
@@ -20,7 +20,6 @@ export class CreateUserComponent implements OnInit, InMemoryDbService {
   User: FormGroup;
   users: User[] = [];
   user: UserFetch | undefined;
-  
   constructor(private formBuilder: FormBuilder,
     private router: Router,
     private appservice: AppserviceService,
@@ -48,13 +47,13 @@ export class CreateUserComponent implements OnInit, InMemoryDbService {
   }
 
   ngOnInit(): void {
-    this.dtOptions = {
-      pagingType: 'full_numbers',
-      pageLength: 5,
-      processing: true
-    };
-  }
-  
+    // this.dtOptions = {
+    //   pagingType: 'full_numbers'      
+    // };
+    $(document).ready(function() {
+      $('#example').DataTable();
+  } );
+  }  
   addUser() {
     this.appservice.addUser(this.User.value).subscribe(data => {
       this.user = data;
@@ -62,4 +61,5 @@ export class CreateUserComponent implements OnInit, InMemoryDbService {
     });
     this.getUsers();
   }
+  get f() { return this.User.controls; }
 }

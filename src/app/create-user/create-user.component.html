@@ -1,7 +1,8 @@
-<h2>Create User</h2>
-
-<form [formGroup]='User' (ngSubmit)='addUser()' novalidate>
-
+<div style="background-color: currentColor;">
+<div>
+    <h2 class="welcome">Create Users</h2>
+</div>
+<!-- <form [formGroup]='User' (ngSubmit)='addUser()' novalidate>
     <div class="form-group">
         <label for="exampleInputEmail1">Name</label>
         <input class="form-control form-control-sm" type="text" formControlName='name' placeholder="Enter Name" />
@@ -15,33 +16,182 @@
         <input class="form-control form-control-sm" type="text" formControlName='price' placeholder="Enter price" />
     </div>
     <button class='btn btn-2'>Add User</button>
-</form>
 
+</form> -->
+<div class="row full-row adjust-row-margin">
+    <div class="row image-form full-row adjust-row-margin">
+        <div class="col-sm">
+
+        </div>
+        <div class="col-12 col-sm-4" style="background-color: lightblue;margin-top: 25px;margin-right: 10%;">
+            <form class="login-form" [formGroup]='User' (ngSubmit)='addUser()' novalidate>
+                <div style="padding-top: 50px;" class="margin">
+                </div>
+                <div class="row adjust-row-margin full-row">
+                    <div class="row adjust-row-margin full-row">
+                        <div class="col-1 col-sm-1"></div>
+                        <div class="col-3 col-sm-3">
+                            <label type="text">
+                                Name:
+                            </label>
+                        </div>
+                        <div class="col-8 col-sm-8"></div>
+
+                    </div>
+                    <div class="row adjust-row-margin full-row">
+                        <div class="col-1 col-sm-1"></div>
+                        <div class="col-10 col-sm-8">
+                            <input type="text" class="form-control" formControlName="name"
+                                [ngClass]="{ 'is-invalid': f.name.touched && f.name.errors }"
+                                style="margin-bottom: 20px;">
+                            <div *ngIf="f.name.touched && f.name.errors" class="invalid-feedback">
+                                <div *ngIf="f.name.errors.required">Name is required</div>
+                            </div>
+                        </div>
+                        <div class="col-1 col-sm-3"></div>
+
+                    </div>
+                </div>
+                <div class="row adjust-row-margin full-row">
+                    <div class="row adjust-row-margin full-row">
+                        <div class="col-1 col-sm-1"> </div>
+                        <div class="col-4 col-sm-4">
+                            <label type="text">
+                                Model:
+                            </label>
+                        </div>
+                        <div class="col-1 col-sm-3">
+
+                        </div>
+                        <div class="col-6 col-sm-4">
+
+                        </div>
+                    </div>
+                    <div class="row adjust-row-margin full-row">
+                        <div class="col-1 col-sm-1"></div>
+                        <div class="col-10 col-sm-8">
+                            <input type="text" class="form-control" formControlName="model"
+                                [ngClass]="{ 'is-invalid': f.model.touched && f.model.errors }">
+                            <div *ngIf="f.model.touched && f.model.errors" class="invalid-feedback">
+                                <div *ngIf="f.model.errors.required">Model is required</div>
+                            </div>
+                        </div>
+                        <div class="col-1 col-sm-3"></div>
+
+                    </div>
+                </div>
+                <div class="row adjust-row-margin full-row">
+                    <div class="row adjust-row-margin full-row">
+                        <div class="col-1 col-sm-1"> </div>
+                        <div class="col-4 col-sm-4">
+                            <label type="text" style="margin-top:20px;">
+                                Price:
+                            </label>
+                        </div>
+                        <div class="col-1 col-sm-3">
+
+                        </div>
+                        <div class="col-6 col-sm-4">
+
+                        </div>
+                    </div>
+                    <div class="row adjust-row-margin full-row">
+                        <div class="col-1 col-sm-1"></div>
+                        <div class="col-10 col-sm-8">
+                            <input type="text" class="form-control" formControlName="price"
+                                [ngClass]="{ 'is-invalid': f.price.touched && f.price.errors }"
+                                style="margin-bottom: 20px;">
+                            <div *ngIf="f.price.touched && f.price.errors" class="invalid-feedback">
+                                <div *ngIf="f.price.errors.required">Price is required</div>
+                            </div>
+                        </div>
+                        <div class="col-1 col-sm-3"></div>
+
+                    </div>
+                </div>
+                <div class="row adjust-row-margin full-row" style="padding-top: 10px;">
+                    <div class="row adjust-row-margin full-row">
+                        <div class="col-1 col-sm-1"></div>
+                        <div class="col-10 col-sm-8">
+
+                        </div>
+                        <div class="col-1 col-sm-3"> </div>
+
+                    </div>
+                    <div class="row adjust-row-margin full-row">
+                        <div class="col-1 col-sm-1"></div>
+                        <div class="col-10 col-sm-10">
+                            <button type="submit" style="width:70%;" class='btn welcome'>Add User</button>
+                        </div>
+                        <div class="col-1 col-sm-1"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+
+</div>
 <br><br>
-<table class="table table-striped table-bordered" datatable [dtOptions]="dtOptions" class="row-border hover">
-    <thead class="thead-dark">
+<!-- <div class="row full-row adjust-row-margin">
+    <div class="row image-form full-row adjust-row-margin">
+        <div class="col-sm">
+
+        </div>
+        <div class="col-12 col-sm-4" style="margin-top: 20px;">
+            <table class="table table-striped">
+                <div style="margin-top:50px;padding-top: 20px;margin-left:60px;" class="margin">
+                </div>
+                <div class="row adjust-row-margin full-row">
+                    <div class="row adjust-row-margin full-row">
+                        <thead class="thead-dark">
+                            <th class="col-3 col-sm-3">Id</th>
+                            <th class="col-3 col-sm-3">Name
+                            </th>
+                            <th class="col-3 col-sm-3">Model</th>
+                            <th class="col-2 col-sm-2">Price
+                            </th>
+                        </thead>
+                    </div>
+                    <div class="row adjust-row-margin full-row">
+                        <tbody>
+                            <tr *ngFor="let u of users">
+                                <td class="col-3 col-sm-3">{{u.id}}</td>
+                                <td class="col-3 col-sm-3">{{u.name}}
+                                </td>
+                                <td class="col-3 col-sm-3">{{u.model}}</td>
+                                <td class="col-2 col-sm-2">{{u.price}}</td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </div>
+
+            </table>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+
+</div> -->
+<table class="table table-striped table-bordered"id="example"style="background-color:lightblue;">
+    <thead class="thead-light">
         <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Name</th>
-            <th scope="col">Model</th>
-            <th scope="col">Price</th>
+            <th class="th-sm">Id</th>
+            <th class="th-sm">Name</th>
+            <th class="th-sm">Model</th>
+            <th class="th-sm">Price</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let u of users">
-            <td>
-                {{u.id}}
+            <td> {{u.id}}</td>
+            <td> {{u.name}}
             </td>
-            <td>
-                {{u.name}}
-            </td>
-            <td>
-                {{u.model}}
-            </td>
-            <td>
-                {{u.price}}
-            </td>
+            <td> {{u.model}}</td>
+            <td> {{u.price}}</td>
         </tr>
     </tbody>
 </table>
+</div>
 <!-- datatable [dtOptions]="dtOptions" class="row-border hover" id="footable" -->

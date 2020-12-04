@@ -1,27 +1,25 @@
-<div style="text-align: center;"><h4>List of Users</h4></div>
-<table class ="table table-striped table-bordered">
-    <thead class="thead-dark">
-        <tr>
-          <th scope="col">Id</th>
-          <th scope="col">Name</th>
-          <th scope="col">Model</th>
-          <th scope="col">Price</th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let u of users">
-      <td scope="row">
-        {{u.id}}
-      </td>
-      <td scope="row">
-        {{u.name}}
-      </td>
-      <td scope="row">
-        {{u.model}}
-      </td>
-      <td scope="row">
-        {{u.price}}
-      </td>
-    </tr>
-</tbody>
-  </table>
+<div style="background-color: currentColor; width: 110%; height: 900px;">
+<div>
+  <h2 class="welcome">List of Users</h2>
+</div>
+<br />
+<table class="table table-striped table-bordered" style="background-color:lightblue; width: 50%;margin-left: 20%;margin-top: 10%;">
+  <thead class="thead-light">
+      <tr class="row adjust-row-margin full-row">
+          <th class="col-3">Id</th>
+          <th class="col-3">Name</th>
+          <th class="col-3">Model</th>
+          <th class="col-3">Price</th>
+      </tr>
+  </thead>
+  <tbody>        
+      <tr *ngFor="let u of users" class="row adjust-row-margin full-row">
+          <td class="col-3"> {{u.id}}</td>
+          <td class="col-3"> {{u.name}}      
+          </td>
+          <td class="col-3"> {{u.model}}</td>
+          <td class="col-3">  {{u.price}}</td>
+      </tr>
+  </tbody>
+</table>
+</div>
