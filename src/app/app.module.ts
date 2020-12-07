@@ -13,6 +13,8 @@ import { GetUserComponent } from './get-user/get-user.component';
 import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { DataTablesModule } from 'angular-datatables';
+import { DemoComponent } from './demo/demo.component';
+
 
 @NgModule({
   declarations: [
@@ -21,15 +23,16 @@ import { DataTablesModule } from 'angular-datatables';
     GetUserComponent,
     DeleteUserComponent,
     CreateUserComponent,
+    DemoComponent,
     
   ],
   imports: [
     BrowserModule,
+    DataTablesModule,
     AppRoutingModule,
     HttpClientModule,
     InMemoryWebApiModule,
     RouterModule,
-    DataTablesModule,
     AppRoutingModule, InMemoryWebApiModule.forRoot(UserData), HttpClientModule, FormsModule, ReactiveFormsModule
   ],
   providers: [],

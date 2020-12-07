@@ -11,6 +11,7 @@ import { UserFetch } from '../user-fetch';
   styleUrls: ['./delete-user.component.css']
 })
 export class DeleteUserComponent implements OnInit {
+  dtOptions: DataTables.Settings = {};
   users: User[] = [];
   user!: UserFetch;
   displayData!: boolean;
@@ -21,6 +22,10 @@ export class DeleteUserComponent implements OnInit {
   ngOnInit(): void {
     this.getUsers();
      this.deleteUser();
+     this.dtOptions = {
+      pagingType: 'full_numbers'      
+    };
+    
   }
   idtodelete=0;
   deleteUser() {

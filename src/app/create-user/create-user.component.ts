@@ -13,9 +13,7 @@ declare var $: any;
   templateUrl: './create-user.component.html',
   styleUrls: ['./create-user.component.css']
 })
-export class CreateUserComponent implements OnInit, InMemoryDbService {
-  // dtOptions: DataTables.Settings = {};
-  // title = 'datatables';
+export class CreateUserComponent implements OnInit, InMemoryDbService {  
   dtOptions: DataTables.Settings = {};
   User: FormGroup;
   users: User[] = [];
@@ -31,7 +29,7 @@ export class CreateUserComponent implements OnInit, InMemoryDbService {
           price: ['', [Validators.required]]
   
         });
-        this.getUsers();
+        this.getUsers();      
       }
      }
     //   this.dtOptions = {
@@ -47,13 +45,12 @@ export class CreateUserComponent implements OnInit, InMemoryDbService {
   }
 
   ngOnInit(): void {
-    // this.dtOptions = {
-    //   pagingType: 'full_numbers'      
-    // };
-    $(document).ready(function() {
-      $('#example').DataTable();
-  } );
+    this.dtOptions = {
+      pagingType: 'full_numbers'      
+    };
+    
   }  
+
   addUser() {
     this.appservice.addUser(this.User.value).subscribe(data => {
       this.user = data;
