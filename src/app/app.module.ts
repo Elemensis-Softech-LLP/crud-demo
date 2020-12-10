@@ -14,6 +14,10 @@ import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { DataTablesModule } from 'angular-datatables';
 import { DemoComponent } from './demo/demo.component';
+import { TestingComponent } from './testing/testing.component';
+import { HighliteDirective } from './testing/highlite/highlite.directive';
+import { AccountComponent } from './testing/account/account.component';
+import { NewAccountComponent } from './testing/account/new-account/new-account.component';
 
 
 @NgModule({
@@ -24,6 +28,10 @@ import { DemoComponent } from './demo/demo.component';
     DeleteUserComponent,
     CreateUserComponent,
     DemoComponent,
+    TestingComponent,
+    HighliteDirective,
+    AccountComponent,
+    NewAccountComponent,
     
   ],
   imports: [

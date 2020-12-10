@@ -21,7 +21,7 @@ const routes: Routes = [{
 },{  
   path: 'demo',
   component: DemoComponent
-}];
+},];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
