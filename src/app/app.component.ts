@@ -20,11 +20,11 @@ export class AppComponent {
     }
   ];
 
-onAccountAdded(newAccount: {name: string, status: string}){
+onAccountAdded(newAccount: {name: string,status: string}){
 this.accounts.push(newAccount);
 }
 
-onStatusChange(updateInfo: {id: number, newStatus:string}){
+onStatusChange(updateInfo: {id: number,newStatus:string}){
   this.accounts[updateInfo.id].status = updateInfo.newStatus;
 }
 

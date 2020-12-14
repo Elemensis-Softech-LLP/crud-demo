@@ -18,6 +18,9 @@ import { TestingComponent } from './testing/testing.component';
 import { HighliteDirective } from './testing/highlite/highlite.directive';
 import { AccountComponent } from './testing/account/account.component';
 import { NewAccountComponent } from './testing/account/new-account/new-account.component';
+import { UserComponent } from './testing/user/user.component';
+import { ServerComponent } from './testing/server/server.component';
+import { Home2Component } from './testing/home2/home2.component';
 
 
 @NgModule({
@@ -32,6 +35,10 @@ import { NewAccountComponent } from './testing/account/new-account/new-account.c
     HighliteDirective,
     AccountComponent,
     NewAccountComponent,
+    UserComponent,
+    ServerComponent,
+    Home2Component,
+    
     
   ],
   imports: [
