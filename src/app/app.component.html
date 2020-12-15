@@ -1,6 +1,9 @@
 
-<router-outlet></router-outlet>
+<!-- <app-header (featureSelected)="onNavigate($event)"></app-header> -->
+<router-outlet></router-outlet>       
+
 <!-- <app-testing></app-testing> -->
+<!-- <app-header></app-header> -->
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -8,33 +11,8 @@
             <!-- <app-account *ngFor="let acc of accounts; let i=index"
             [account]="acc"
             [id]="i"
-            (statusChange)="onStatusChange($event)"></app-account> -->
-            <div class="row">
-                <div class="col-2">
-                <a href="£" routerLink="/home2">Home</a>
-            </div>
-            <div class="col-2">
-                <a href="£">Servers</a>
-            </div>
-            <div class="col-2">
-                 <a href="£">Users</a>
-                </div>
-            </div>
+            (statusChange)="onStatusChange($event)"></app-account> -->     
+            
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <!-- <app-home2></app-home2> -->
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <!-- <app-user></app-user> -->
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <app-server></app-server>
-        </div>
-    </div>
+    </div>    
 </div>

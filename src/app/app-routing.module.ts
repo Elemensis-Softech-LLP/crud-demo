@@ -5,7 +5,8 @@ import { GetUserComponent } from './get-user/get-user.component';
 import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { DemoComponent } from './demo/demo.component';
-import { Home2Component } from './testing/home2/home2.component';
+import { RecipesComponent } from './testing/recipes/recipes.component';
+import { ShoppingListComponent } from './testing/shopping-list/shopping-list.component';
 
 const routes: Routes = [{  
   path: 'home',
@@ -23,8 +24,11 @@ const routes: Routes = [{
   path: 'demo',
   component: DemoComponent
 },{  
-  path: 'home2',
-  component: Home2Component
+  path: 'recipes',
+  component: RecipesComponent
+},{  
+  path: 'shopping-list',
+  component: ShoppingListComponent
 },];
 
 @NgModule({
@@ -32,3 +36,7 @@ const routes: Routes = [{
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+// {  
+//   path: 'somthing',
+//   redirectTo: '/recipes'
+// }

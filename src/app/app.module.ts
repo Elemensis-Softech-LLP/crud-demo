@@ -18,9 +18,16 @@ import { TestingComponent } from './testing/testing.component';
 import { HighliteDirective } from './testing/highlite/highlite.directive';
 import { AccountComponent } from './testing/account/account.component';
 import { NewAccountComponent } from './testing/account/new-account/new-account.component';
-import { UserComponent } from './testing/user/user.component';
-import { ServerComponent } from './testing/server/server.component';
+import { HeaderComponent } from './testing/header/header.component';
+import { RecipesComponent } from './testing/recipes/recipes.component';
+import { ShoppingListComponent } from './testing/shopping-list/shopping-list.component';
+import { RecipeListComponent } from './testing/recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './testing/recipes/recipe-item/recipe-item.component';
+import { RecipeDetailComponent } from './testing/recipes/recipe-detail/recipe-detail.component';
+import { ShoppingEditComponent } from './testing/shopping-list/shopping-edit/shopping-edit.component';
 import { Home2Component } from './testing/home2/home2.component';
+import { UserComponent } from './testing/user/user.component';
+
 
 
 @NgModule({
@@ -35,9 +42,16 @@ import { Home2Component } from './testing/home2/home2.component';
     HighliteDirective,
     AccountComponent,
     NewAccountComponent,
-    UserComponent,
-    ServerComponent,
+    HeaderComponent,
+    RecipesComponent,
+    ShoppingListComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
+    RecipeDetailComponent,
+    ShoppingEditComponent,
     Home2Component,
+    UserComponent,
+    
     
     
   ],
