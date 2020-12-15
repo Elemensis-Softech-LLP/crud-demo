@@ -7,16 +7,17 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-// @Output()  recipewasSelected = new EventEmitter<Recipe>();
-// recipes : Recipe [] = [
-//   new Recipe('A Test Recipe', 'this is a simply test', '../assets/image/images.jpeg'),
-//   new Recipe('Another Test Recipe', 'this is a simply test', '../assets/image/images.jpeg')
-// ];
+  @Output() recipeWasSelected = new EventEmitter<Recipe>();
+  recipes: Recipe[] = [
+    new Recipe('A Test Recipe', 'This is simply a test', '../assets/image/images.jpeg'),
+    new Recipe('Another Test Recipe', 'This is simply a test', '../assets/image/images.jpeg')
+  ];
+  recipewasSelected: any;
   constructor() { }
 
   ngOnInit(): void {
   }
-  // onRecipeSelected(recipe: Recipe){
-  //   this.recipewasSelected.emit(recipe);
-  //   }
+  onRecipeSelected(recipe: Recipe){
+    this.recipewasSelected.emit(recipe);
+    }
 }

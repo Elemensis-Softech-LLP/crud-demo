@@ -1,6 +1,5 @@
-
 <!-- <app-header (featureSelected)="onNavigate($event)"></app-header> -->
-<router-outlet></router-outlet>       
+<router-outlet></router-outlet>
 
 <!-- <app-testing></app-testing> -->
 <!-- <app-header></app-header> -->
@@ -11,8 +10,18 @@
             <!-- <app-account *ngFor="let acc of accounts; let i=index"
             [account]="acc"
             [id]="i"
-            (statusChange)="onStatusChange($event)"></app-account> -->     
-            
+            (statusChange)="onStatusChange($event)"></app-account> -->
+            <div class="col-xs-12">
+                <a routerLink="/home2">Home</a>|
+                <a [routerLink]="['user',1]">
+                    User 1
+                </a>
+                |
+                <a [routerLink]="['user',2]">
+                    User 1
+                </a>
+            </div>
+            <p *ngIf="userActivated">Activated!</p>
         </div>
-    </div>    
+    </div>
 </div>

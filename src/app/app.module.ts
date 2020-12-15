@@ -27,6 +27,9 @@ import { RecipeDetailComponent } from './testing/recipes/recipe-detail/recipe-de
 import { ShoppingEditComponent } from './testing/shopping-list/shopping-edit/shopping-edit.component';
 import { Home2Component } from './testing/home2/home2.component';
 import { UserComponent } from './testing/user/user.component';
+import { RecipeEditComponent } from './testing/recipes/recipe-edit/recipe-edit.component';
+import { RecipeStartComponent } from './testing/recipes/recipe-start/recipe-start.component';
+
 
 
 
@@ -51,7 +54,9 @@ import { UserComponent } from './testing/user/user.component';
     ShoppingEditComponent,
     Home2Component,
     UserComponent,
-    
+    RecipeEditComponent,
+    RecipeStartComponent,
+   
     
     
   ],
