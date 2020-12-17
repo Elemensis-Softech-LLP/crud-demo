@@ -29,6 +29,7 @@ import { Home2Component } from './testing/home2/home2.component';
 import { UserComponent } from './testing/user/user.component';
 import { RecipeEditComponent } from './testing/recipes/recipe-edit/recipe-edit.component';
 import { RecipeStartComponent } from './testing/recipes/recipe-start/recipe-start.component';
+import { FormComponent } from './testing/form/form.component';
 
 
 
@@ -56,6 +57,7 @@ import { RecipeStartComponent } from './testing/recipes/recipe-start/recipe-star
     UserComponent,
     RecipeEditComponent,
     RecipeStartComponent,
+    FormComponent,
    
     
     
