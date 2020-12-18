@@ -1,19 +1,20 @@
-<div class="row" style="margin-left: 30px;">
-    <div class="col-xs-10">
-      <app-shopping-edit
-        (ingredientAdded)="onIngredientAdded($event)"></app-shopping-edit>
-      <hr>
-      <ul class="list-group">
-        <a
-          class="list-group-item"
-          style="cursor: pointer"
-          *ngFor="let ingredient of ingredients"
-        >
-          {{ ingredient.name }} ({{ ingredient.amount }})
-        </a>
-      </ul>
-    </div>
+<div class="row">
+  <div class="col-xs-10">
+    <app-shopping-edit></app-shopping-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let ingredient of ingredients; let i = index"
+        (click)="onEditItem(i)"
+      >
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
   </div>
+</div>
+
   
 <!-- <div class="row">
     <div class="col-12" style="margin-left:50%;">

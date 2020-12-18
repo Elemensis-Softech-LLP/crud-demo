@@ -30,6 +30,7 @@ import { UserComponent } from './testing/user/user.component';
 import { RecipeEditComponent } from './testing/recipes/recipe-edit/recipe-edit.component';
 import { RecipeStartComponent } from './testing/recipes/recipe-start/recipe-start.component';
 import { FormComponent } from './testing/form/form.component';
+import { ReactiveFormComponent } from './testing/form/reactive-form/reactive-form.component';
 
 
 
@@ -58,6 +59,7 @@ import { FormComponent } from './testing/form/form.component';
     RecipeEditComponent,
     RecipeStartComponent,
     FormComponent,
+    ReactiveFormComponent,
    
     
     

@@ -13,6 +13,7 @@ import { RecipeListComponent } from './testing/recipes/recipe-list/recipe-list.c
 import { RecipeItemComponent } from './testing/recipes/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './testing/recipes/recipe-detail/recipe-detail.component';
 import { FormComponent } from './testing/form/form.component';
+import { ReactiveFormComponent } from './testing/form/reactive-form/reactive-form.component';
 
 const routes: Routes = [{  
   path: 'home',
@@ -53,6 +54,9 @@ const routes: Routes = [{
 },{  
   path: 'form',
   component: FormComponent
+},{  
+  path: 'reactive-form',
+  component: ReactiveFormComponent
 },];
 
 @NgModule({

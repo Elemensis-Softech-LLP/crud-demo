@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormArray, NgForm } from '@angular/forms';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -70,9 +70,10 @@ export class FormComponent implements OnInit {
     this.user.gender = this.signupForm.value.gender;
 
     this.signupForm.reset();
-    console.log(this.form.value);
-    
+    console.log(this.form.value);    
   }
+
+
   get f() { return this.form.controls; }
 
 }

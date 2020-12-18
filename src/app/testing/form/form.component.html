@@ -15,7 +15,10 @@
                 class="form-control"
                 ngModel
                 name="username"
-                required>
+                required
+                username
+                #username="ngModel">
+                <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid username!</span>
             </div>
             <button
               class="btn btn-default"
@@ -35,7 +38,7 @@
               <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
             </div>
           </div>
-          <p *ngIf="!userData.valid && userData.touched">User Data is invalid!</p>
+          <!-- <p *ngIf="!userData.valid && userData.touched">User Data is invalid!</p> -->
           <div class="form-group">
             <label for="secret">Secret Questions</label>
             <select
@@ -65,7 +68,7 @@
                 required>
               {{ gender }}
             </label>
-          </div>
+          </div>          
           <button
             class="btn btn-primary"
             type="submit"
