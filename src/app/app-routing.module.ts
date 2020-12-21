@@ -14,6 +14,8 @@ import { RecipeItemComponent } from './testing/recipes/recipe-item/recipe-item.c
 import { RecipeDetailComponent } from './testing/recipes/recipe-detail/recipe-detail.component';
 import { FormComponent } from './testing/form/form.component';
 import { ReactiveFormComponent } from './testing/form/reactive-form/reactive-form.component';
+import { RecipeEditComponent } from './testing/recipes/recipe-edit/recipe-edit.component';
+import { PipeComponent } from './testing/pipe/pipe.component';
 
 const routes: Routes = [{  
   path: 'home',
@@ -43,6 +45,9 @@ const routes: Routes = [{
   path: 'recipe-item',
   component: RecipeItemComponent
 },{  
+  path: 'recipe-edit',
+  component: RecipeEditComponent
+},{  
   path: 'shopping-list',
   component: ShoppingListComponent
 },{  
@@ -57,6 +62,9 @@ const routes: Routes = [{
 },{  
   path: 'reactive-form',
   component: ReactiveFormComponent
+},{  
+  path: 'pipe',
+  component: PipeComponent
 },];
 
 @NgModule({

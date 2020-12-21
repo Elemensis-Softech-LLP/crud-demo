@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { UserData } from './user-data.service';
@@ -31,6 +31,9 @@ import { RecipeEditComponent } from './testing/recipes/recipe-edit/recipe-edit.c
 import { RecipeStartComponent } from './testing/recipes/recipe-start/recipe-start.component';
 import { FormComponent } from './testing/form/form.component';
 import { ReactiveFormComponent } from './testing/form/reactive-form/reactive-form.component';
+import { PipeComponent } from './testing/pipe/pipe.component';
+import { ShortenPipe } from './testing/pipe/shorten.pipe';
+import { FilterPipe } from './filter.pipe';
 
 
 
@@ -60,7 +63,9 @@ import { ReactiveFormComponent } from './testing/form/reactive-form/reactive-for
     RecipeStartComponent,
     FormComponent,
     ReactiveFormComponent,
-   
+    PipeComponent,
+    ShortenPipe,
+    FilterPipe
     
     
   ],
